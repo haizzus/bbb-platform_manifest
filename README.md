@@ -41,6 +41,8 @@ lunch beagleboneblack_sd-eng
 
 (eventually, the ```beagleboneblack_emmc``` target will also be supported)
 
+--hgiang: add "focal" to bb-kernel/tools/host_det.sh, line 436 to support ubuntu 20.04
+
 To build the sources:
 
 ```
