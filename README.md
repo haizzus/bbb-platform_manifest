@@ -42,6 +42,21 @@ lunch beagleboneblack_sd-eng
 (eventually, the ```beagleboneblack_emmc``` target will also be supported)
 
 --hgiang: add "focal" to bb-kernel/tools/host_det.sh, line 436 to support ubuntu 20.04
+```
+diff --git a/tools/host_det.sh b/tools/host_det.sh
+index 2e3d20c..9f0b14e 100755
+--- a/tools/host_det.sh
++++ b/tools/host_det.sh
+@@ -433,7 +433,7 @@ debian_regs () {
+ 			warn_eol_distro=1
+ 			stop_pkg_search=1
+ 			;;
+-		bionic|cosmic|disco|eoan)
++		bionic|cosmic|disco|eoan|focal)
+ 			#18.04 bionic: (EOL: April 2023) lts: bionic -> xyz
+ 			#18.10 cosmic: (EOL: July 2019)
+ 			#19.04 disco: (EOL: )
+```
 
 To build the sources:
 
